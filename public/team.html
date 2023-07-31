@@ -90,7 +90,7 @@
         border: 3px solid red;
       }
 
-      img {
+      .team-img {
         width: 116px;
         height: 116px;
         border-radius: 50%;
@@ -229,50 +229,18 @@
   </head>
 
   <body>
-  <nav
-          class="navbar navbar-expand-md bg-body py-3"
-          style="background: linear-gradient(#05445e, #05445e), #05445e"
-  >
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#"></a
-      ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
-            data-bs-toggle="collapse"
-            class="navbar-toggler text-light"
-            data-bs-target="#navcol-2"
-    >
-          <span class="visually-hidden">Toggle navigation</span
-          ><span class="navbar-toggler-icon text-light text-opacity-75"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navcol-2">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item fs-2">
-            <a class="nav-link fs-2" href="index.html">
-              Home
-            </a>
-          </li>
-          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-            <a class="nav-link fs-2" href="about.html">
-              About
-            </a>
-          </li>
-          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
-            <a class="nav-link active fs-2" href="team.html">
-              Team
-            </a>
-          </li>
-          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-            <a class="nav-link fs-2" href="faqs.html">
-              FAQs
-            </a>
-          </li>
+  <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background: linear-gradient(#05445e, #05445e), #05445e">
+    <div class="container-fluid"><a class="navbar-brand d-md-none text-center" href="#"><img src="assets/img/logo_tr.png" width="65%" height="65%" alt="Logo"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse d-md-flex" id="navcol-1">
+        <ul class="navbar-nav d-flex justify-content-evenly mx-auto w-100">
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="team.html">Team</a></li>
+        </ul><a class="navbar-brand d-none d-md-block me-0 fs-3 text-center"><img src="assets/img/logo_tr.png" width="100%" height="100%" alt="Logo"></a>
+        <ul class="navbar-nav d-flex justify-content-evenly mx-auto w-100">
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC" target="_blank">Donate</a></li>
         </ul>
-        <a
-                class="btn btn-primary fs-2 ms-md-2"
-                role="button"
-                href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
-                target="_blank"
-        >Donate</a
-        >
       </div>
     </div>
   </nav>
@@ -283,10 +251,10 @@
 
     <h1 class="heading">Board of Directors</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_info(0)"><img src="assets/img/team/board/dr_tiff_per.jpg" alt="tiffany"></div>
-      <div class="image" onclick="fetch_info(1)"><img src="assets/img/team/board/dr_aime_fren.png" alt="french"></div>
-      <div class="image" onclick="fetch_info(2)"><img src="assets/img/team/board/dr_lee_ewin.png" alt="lee ewin"></div>
-      <div class="image" onclick="fetch_info(3)"><img src="assets/img/team/board/dr_dave_u.jpg" alt="dave u"></div>
+      <div class="image" onclick="fetch_info(0)"><img class="team-img" src="assets/img/team/board/dr_tiff_per.jpg" alt="tiffany"></div>
+      <div class="image" onclick="fetch_info(1)"><img class="team-img" src="assets/img/team/board/dr_aime_fren.png" alt="french"></div>
+      <div class="image" onclick="fetch_info(2)"><img class="team-img" src="assets/img/team/board/dr_lee_ewin.png" alt="lee ewin"></div>
+      <div class="image" onclick="fetch_info(3)"><img class="team-img" src="assets/img/team/board/dr_dave_u.jpg" alt="dave u"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="profile" src="assets/img/team/board/dr_tiff_per.jpg" alt="tiffany">
@@ -348,8 +316,8 @@
 
     <h1 class="heading">Mentors</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_mentor_info(0)"><img src="assets/img/team/board/Mr_Usher.png" alt="usher"></div>
-      <div class="image" onclick="fetch_mentor_info(1)"><img src="assets/img/team/board/dr_auld.png" alt="dr auld"></div>
+      <div class="image" onclick="fetch_mentor_info(0)"><img class="team-img" src="assets/img/team/board/Mr_Usher.png" alt="usher"></div>
+      <div class="image" onclick="fetch_mentor_info(1)"><img class="team-img" src="assets/img/team/board/dr_auld.png" alt="dr auld"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="mentor-profile" src="assets/img/team/board/Mr_Usher.png" alt="usher">
@@ -399,8 +367,8 @@
 
     <h1 class="heading">Team Directors</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_team_director_info(0)"><img src="assets/img/team/students/nihal.jpg" alt="nihal"></div>
-      <div class="image" onclick="fetch_team_director_info(1)"><img src="assets/img/team/students/nataniel.png" alt="nataniel"></div>
+      <div class="image" onclick="fetch_team_director_info(0)"><img class="team-img" src="assets/img/team/students/nihal.jpg" alt="nihal"></div>
+      <div class="image" onclick="fetch_team_director_info(1)"><img class="team-img" src="assets/img/team/students/nataniel.png" alt="nataniel"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="team-director-profile" src="assets/img/team/students/nihal.jpg" alt="nihal">
@@ -450,10 +418,10 @@
 
     <h1 class="heading">Lead Interns</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_lead_interns_info(0)"><img src="assets/img/team/students/nil.jpg" alt="nil"></div>
-      <div class="image" onclick="fetch_lead_interns_info(1)"><img src="assets/img/team/students/ayush.png" alt="ayush"></div>
-      <div class="image" onclick="fetch_lead_interns_info(2)"><img src="assets/img/team/students/prabhas.png" alt="prabhas"></div>
-      <div class="image" onclick="fetch_lead_interns_info(3)"><img src="assets/img/team/students/eileen.jpg" alt="eileen"></div>
+      <div class="image" onclick="fetch_lead_interns_info(0)"><img class="team-img" src="assets/img/team/students/nil.jpg" alt="nil"></div>
+      <div class="image" onclick="fetch_lead_interns_info(1)"><img class="team-img" src="assets/img/team/students/ayush.png" alt="ayush"></div>
+      <div class="image" onclick="fetch_lead_interns_info(2)"><img class="team-img" src="assets/img/team/students/prabhas.png" alt="prabhas"></div>
+      <div class="image" onclick="fetch_lead_interns_info(3)"><img class="team-img" src="assets/img/team/students/eileen.jpg" alt="eileen"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="lead-interns-profile" src="assets/img/team/students/nil.jpg" alt="nil">
@@ -515,10 +483,10 @@
 
     <h1 class="heading">Student Medical Team</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_student_medical_team_info(0)"><img src="assets/img/team/students/jeethu.jpg" alt="jeethu"></div>
-      <div class="image" onclick="fetch_student_medical_team_info(1)"><img src="assets/img/team/students/aditi.png" alt="aditi"></div>
-      <div class="image" onclick="fetch_student_medical_team_info(2)"><img src="assets/img/team/students/maddy.jpg" alt="maddy"></div>
-      <div class="image" onclick="fetch_student_medical_team_info(3)"><img src="assets/img/team/students/krisshika.jpg" alt="krisshika"></div>
+      <div class="image" onclick="fetch_student_medical_team_info(0)"><img class="team-img" src="assets/img/team/students/jeethu.jpg" alt="jeethu"></div>
+      <div class="image" onclick="fetch_student_medical_team_info(1)"><img class="team-img" src="assets/img/team/students/aditi.png" alt="aditi"></div>
+      <div class="image" onclick="fetch_student_medical_team_info(2)"><img class="team-img" src="assets/img/team/students/maddy.jpg" alt="maddy"></div>
+      <div class="image" onclick="fetch_student_medical_team_info(3)"><img class="team-img" src="assets/img/team/students/krisshika.jpg" alt="krisshika"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="student-medical-team-profile" src="assets/img/team/students/jeethu.jpg" alt="jeethu">
@@ -580,7 +548,7 @@
 
     <h1 class="heading">Student Medical Team</h1>
     <div class="image-container">
-      <div class="image" onclick="fetch_student_engineering_team_info(0)"><img src="assets/img/team/students/Christian.jpg" alt="christian"></div>
+      <div class="image" onclick="fetch_student_engineering_team_info(0)"><img src="assets/img/team/students/Christian.jpg" class="team-img" alt="christian"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="student-engineering-team-profile" src="assets/img/team/students/Christian.jpg" alt="christian">
@@ -625,8 +593,8 @@
     <h1 class="heading">Student Computer Science (CS) Team</h1>
     <div style="padding-bottom: 100px">
     <div class="image-container">
-      <div class="image" onclick="fetch_student_CS_team_info(0)"><img src="assets/img/team/students/chloe.png" alt="chloe"></div>
-      <div class="image" onclick="fetch_student_CS_team_info(1)"><img src="assets/img/team/students/alexis.jpg" alt="alexis"></div>
+      <div class="image" onclick="fetch_student_CS_team_info(0)"><img class="team-img" src="assets/img/team/students/chloe.png" alt="chloe"></div>
+      <div class="image" onclick="fetch_student_CS_team_info(1)"><img class="team-img" src="assets/img/team/students/alexis.jpg" alt="alexis"></div>
     </div>
     <div class="info-container">
       <img class="profile" id="student-cs-team-profile" src="assets/img/team/students/chloe.png" alt="chloe">
