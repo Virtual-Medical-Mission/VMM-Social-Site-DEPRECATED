@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Home of Virtual Medical Missions, A non-profit medical organization focused on bringing telemedicine services to underprivileged areas"
+    />
+    <title>Virtual Medical Missions - Home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+    <link rel="stylesheet" href="assets/css/accordion-faq-list.css" />
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css" />
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css">
+    <link
+      rel="stylesheet"
+      href="assets/css/Footer-with-social-media-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo_bg.png"
+      type="image/x-icon"
+    />
+    <style>
+      .donate-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(75vh - 75px);
+        background: floralwhite;
+        color: #f4f6f7;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 10px;
+      }
+
+      .donate-section img {
+        width: 45%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1;
+        margin-left: -20%;
+      }
+      .donate-section .box {
+        z-index: 9999;
+        background:  #ff1a1a;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 4vw;
+        border-radius: 4vw;
+        width: 37%;
+        max-width: 77%;
+        height: auto;
+        max-height: 55%;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(25%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .donate-section .box h2 {
+        font-size: 1.6vw;
+        margin-top: 1vw;
+        font-weight: 400;
+      }
+
+      .donate-section .box p {
+        opacity: 0.9;
+        font-weight: 100;
+        margin-top: 0.5vw;
+        flex-grow: 1;
+        font-size: 1.15vw;
+      }
+
+      .donate-section .box a.btn {
+        font-size: 1.1vw;
+        padding: 0.2vw 0.25vw;
+      }
+
+      @media (max-width: 768px) {
+        .donate-section {
+          flex-direction: column;
+          text-align: center;
+          padding: 0;
+        }
+
+        .donate-section img {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 4vw;
+        }
+
+        .donate-section .box {
+          margin: 0 auto;
+          position: static;
+          width: 90%;
+          padding: 4vw;
+          border-radius: 4vw;
+          height: auto;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+
+        .donate-section .box h2 {
+          font-size: 4vw;
+          margin-top: 2vw;
+        }
+
+        .donate-section .box p {
+          margin-top: 3vw;
+          font-size: 3vw;
+        }
+
+        .donate-section .box a.btn {
+          font-size: 5vw;
+          padding: 2.5vw 2vw;
+        }
+      }
+
+      .navbar-logo {
+        width: 168px;
+        height: 96px;
+        border-radius: 0;
+      }
+
+      .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover::before {
+        transform: scaleX(1);
+      }
+      .custom-toggler .navbar-toggler-icon {
+        filter: brightness(1) invert(1);
+      }
+      .navbar-nav .nav-item .nav-link.active {
+        position: relative;
+      }
+
+      .navbar-nav .nav-item .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          display: inline-block;
+          margin: 5px;
+        }
+        .navbar .btn {
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-body py-3"
+      style="background: linear-gradient(#05445e, #05445e), #05445e"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#"></a
+        ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler text-light"
+          data-bs-target="#navcol-2"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon text-light text-opacity-75"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-2">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item fs-2">
+              <a class="nav-link active fs-2" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+              <a class="nav-link fs-2" href="about.html">
+                About
+              </a>
+            </li>
+            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
+              <a class="nav-link fs-2" href="team.html">
+                Team
+              </a>
+            </li>
+            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+              <a class="nav-link fs-2" href="faqs.html">
+                FAQs
+              </a>
+            </li>
+          </ul>
+          <a
+            class="btn btn-primary fs-2 ms-md-2"
+            role="button"
+            href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+            target="_blank"
+            >Donate</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="donate-section" style="padding-bottom: 10px;">
+      <img src="assets/img/backdrop.png" alt="donate">
+
+      <div class="box">
+        <h2>Show Support To Our Cause</h2>
+        <p class="fw-bold text-light">A Legacy Of Healing<br><i>All donations in the United States are tax-deductible</i></p>
+        <a class="btn btn-light btn-lg me-2 btn-lg" role="button" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC">Donate</a>
+      </div>
+    </div>
+
+    <div class="container py-4 py-xl-5">
+      <h1 class="display-6 fw-bold text-center">ABOUT</h1>
+      <div class="row gy-4 gy-md-0 text-center">
+        <div class="col-md-6">
+          <div class="p-xl-5 m-xl-5">
+            <img
+              class="rounded img-fluid w-100 fit-cover"
+              style="min-height: 300px; padding-top: 0"
+              src="assets/img/about.jpg"
+              width="456"
+              height="342"
+              alt="about image"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 text-center d-md-flex align-items-md-center">
+          <div class="text-center" style="max-width: 350px"></div>
+          <p class="text-start">
+            The Virtual Medicine Mission (VMM) Healthcare program is a
+            non-profit&nbsp;organization dedicated to improving healthcare
+            access in underserved<br />communities through the innovative use of
+            telemedicine. Our mission is to bridge the gap between healthcare
+            providers and patients by&nbsp;leveraging technology to deliver
+            high-quality medical services&nbsp;remotely. We connect medical
+            professionals and technology with patients in remote or underserved
+            areas, providing consultations, diagnosis, and treatment options.
+            Our dedicated team of healthcare&nbsp;providers is passionate about
+            delivering compassionate care and making&nbsp;a positive impact on
+            individuals and communities. We believe that&nbsp;together, we can
+            make a difference in the healthcare systems of&nbsp;underserved
+            communities, starting with Godo, Kenya.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center">We are creating a <em>legacy of healing</em></h1>
+
+    <div
+      class="embedsocial-hashtag"
+      data-ref="7f9a44d1c8c640d1fdcf60fcface0a4ff3b66669"
+    >
+      <a
+        class="feed-powered-by-es feed-powered-by-es-feed-new"
+        href="https://embedsocial.com/social-media-aggregator/"
+        target="_blank"
+        title="Widget by EmbedSocial"
+      >
+        Widget by EmbedSocial<span>→</span>
+      </a>
+    </div>
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://embedsocial.com/cdn/ht.js";
+        d.getElementsByTagName("head")[0].appendChild(js);
+      })(document, "script", "EmbedSocialHashtagScript");
+    </script>
+
+    <div class="container container-contact100" style="background-color: floralwhite">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="https://formcarry.com/s/NWKMOkCFIN" method="post"><span class="contact100-form-title">Contact Us</span>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your name"><input class="form-control input100" type="text" name="name" placeholder="Full Name" /><span class="focus-input100"></span></div>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x"><input class="form-control input100" type="text" name="email" placeholder="E-mail" /><span class="focus-input100"></span></div>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your message"><textarea class="form-control input100" name="message" placeholder="Your Message"></textarea><span class="focus-input100"></span></div>
+          <div class="container-contact100-form-btn"><button class="btn btn-primary contact100-form-btn" type="submit"><span>Send <i class="fa fa-star fa fa-paper-plane-o m-r-6" aria-hidden="true"></i></span></button></div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footerpad">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-8 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/vmmhealth/?igshid=ZWQyN2ExYTkwZQ=="
+                  target="_blank"
+                  ><span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i
+                      class="fa fa-instagram fa-stack-1x fa-inverse"
+                    ></i></span
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/company/virtual-medical-missions/about/"
+                  target="_blank"
+                  ><span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span
+                ></a>
+              </li>
+            </ul>
+            <p
+              class="copyright text-muted text-center"
+              style="color: var(--bs-body-bg) !important"
+            >
+              Copyright ©2023 Virtual Medical Missions&nbsp;
+            </p>
+            <p style="text-align: center">
+              <span style="color: rgb(254, 251, 241)">All Rights Reserved</span>
+            </p>
+            <p style="text-align: center">
+              <span style="color: rgb(254, 251, 241)"
+                >VMM is a registered 501(c)(3) nonprofit organization</span
+              >
+            </p>
+            <p style="text-align: center">
+              <span style="color: rgb(254, 251, 241)"
+                >All donations in the United States are tax-deductible.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
