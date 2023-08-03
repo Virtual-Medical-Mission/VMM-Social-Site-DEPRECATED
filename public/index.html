@@ -49,12 +49,9 @@
       }
 
       .donate-section img {
-        width: 45%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100vw;
+        height: auto;
         z-index: 1;
-        margin-left: -20%;
       }
       .donate-section .box {
         z-index: 9999;
@@ -63,24 +60,23 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
         padding: 4vw;
         border-radius: 4vw;
-        width: 37%;
+        width: 60%;
         max-width: 77%;
         height: auto;
         max-height: 55%;
         position: absolute;
         margin: 0 auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(25%, -50%);
+        transform: translate(0%, -20%);
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
       .donate-section .box h2 {
-        font-size: 1.6vw;
+        font-size: 3vw;
         margin-top: 1vw;
         font-weight: 400;
+        text-align: center;
       }
 
       .donate-section .box p {
@@ -88,12 +84,14 @@
         font-weight: 100;
         margin-top: 0.5vw;
         flex-grow: 1;
-        font-size: 1.15vw;
+        font-size: 1.25vw;
+        text-align: center;
       }
 
       .donate-section .box a.btn {
-        font-size: 1.1vw;
+        font-size: 3vw;
         padding: 0.2vw 0.25vw;
+        text-align: center;
       }
 
       @media (max-width: 768px) {
@@ -101,39 +99,40 @@
           flex-direction: column;
           text-align: center;
           padding: 0;
+          margin: 0;
         }
 
         .donate-section img {
           width: 100%;
           margin-left: 0;
-          margin-bottom: 4vw;
+          margin: 0;
+          padding: 0;
         }
 
         .donate-section .box {
-          margin: 0 auto;
-          position: static;
+          position: absolute;
           width: 90%;
-          padding: 4vw;
-          border-radius: 4vw;
           height: auto;
-          top: 0;
-          left: 0;
-          transform: none;
+          transform: translate(0, 2.5%);
         }
 
         .donate-section .box h2 {
           font-size: 4vw;
-          margin-top: 2vw;
+          padding: 0;
+          margin-bottom: 1.5%;
         }
 
         .donate-section .box p {
-          margin-top: 3vw;
-          font-size: 3vw;
+          font-size: 2vw;
+          padding: 0;
+          margin-bottom: 5%;
         }
 
         .donate-section .box a.btn {
-          font-size: 5vw;
-          padding: 2.5vw 2vw;
+          font-size: 4vw;
+          transform: translate(1.5%);
+          margin-bottom: 0;
+          padding: 0;
         }
       }
 
@@ -206,7 +205,7 @@
             <li class="nav-item"><a class="nav-link text-center fs-3" href="index.html" >Home</a></li>
             <li class="nav-item"><a class="nav-link text-center fs-3" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link text-center fs-3" href="team.html">Team</a></li>
-          </ul><a class="navbar-brand d-none d-md-block me-0 fs-3 text-center"><img src="assets/img/logo_tr.png" width="100%" height="100%" alt="Logo"></a>
+          </ul><a class="navbar-brand d-none d-md-block me-0 fs-3 text-center"><img src="assets/img/logo_tr.png" width="50%" height="50%" alt="Logo"></a>
           <ul class="navbar-nav d-flex justify-content-evenly mx-auto w-100">
             <li class="nav-item"><a class="nav-link text-center fs-3" href="faqs.html">FAQs</a></li>
             <li class="nav-item"><a class="nav-link text-center fs-3" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC" target="_blank">Donate</a></li>
@@ -215,11 +214,11 @@
       </div>
     </nav>
 
-    <div class="donate-section" style="padding-bottom: 10px;">
+    <div class="donate-section">
       <img src="assets/img/backdrop.png" alt="donate">
 
       <div class="box">
-        <h2>Show Support To Our Cause</h2>
+        <h2>Support Our Cause</h2>
         <p class="fw-bold text-light">A Legacy Of Healing<br><i>All donations in the United States are tax-deductible</i></p>
         <a class="btn btn-light btn-lg me-2 btn-lg" role="button" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC">Donate</a>
       </div>
@@ -229,7 +228,7 @@
       <h1 class="display-6 fw-bold text-center">ABOUT</h1>
       <div class="row gy-4 gy-md-0 text-center">
         <div class="col-md-6">
-          <div class="p-xl-5 m-xl-5">
+          <div class="p-xs-5 m-md-5">
             <img
               class="rounded img-fluid w-100 fit-cover"
               style="min-height: 300px; padding-top: 0"
@@ -243,7 +242,7 @@
         <div class="col-md-6 text-center d-md-flex align-items-md-center">
           <div class="text-center" style="max-width: 350px"></div>
           <p class="text-start">
-            The Virtual Medicine Mission (VMM) Healthcare program is a
+            The <span style="color: red">Virtual Medicine Mission (VMM)</span> Healthcare program is a
             non-profit&nbsp;organization dedicated to improving healthcare
             access in underserved<br />communities through the innovative use of
             telemedicine. Our mission is to bridge the gap between healthcare
@@ -260,7 +259,7 @@
         </div>
       </div>
     </div>
-    <h1 class="text-center">We are creating a <em>legacy of healing</em></h1>
+    <h1 class="text-center">We are creating a <em style="color: red">legacy of healing</em></h1>
 
     <div
       class="embedsocial-hashtag"
