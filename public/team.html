@@ -28,6 +28,10 @@
       href="assets/img/logo_bg.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-No-Gutters-baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
     <style>
       @keyframes scrollAnimation {
         0% {
@@ -131,64 +135,6 @@
         font-size: 14px;
       }
 
-      .team-banner-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: calc(50vh - 50px);
-        background: floralwhite;
-        color: #f4f6f7;
-        position: relative;
-        z-index: 1;
-        padding-bottom: 0;
-      }
-
-      .head-image {
-        width: 100%;
-        height: 60vh;
-        background-position: center;
-        background-size: cover;
-        background-image: url('assets/img/team_banner.png');
-      }
-
-      .image-overlay {
-        width: 100%;
-        height: 60vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .title {
-        padding: 0;
-        margin: 0;
-        color: red;
-        font-size: 9vh;
-        font-weight: 500;
-      }
-
-      @media (max-width: 768px) {
-        .team-banner-section {
-          flex-direction: column;
-          text-align: center;
-          padding: 0;
-        }
-
-        .team-banner-section img {
-          width: 90%;
-          height: 100%;
-          margin-left: 0;
-          margin-bottom: 0;
-        }
-      }
-
-      .navbar-logo {
-        width: 168px;
-        height: 96px;
-        border-radius: 0;
-      }
-
       .navbar-nav .nav-item .nav-link {
         position: relative;
         color: white;
@@ -241,6 +187,20 @@
           margin: 10px auto;
         }
       }
+
+      .slide-content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      @media (max-width: 576px) {
+        .slide-content {
+          top: 40%;
+        }
+      }
     </style>
   </head>
 
@@ -261,11 +221,25 @@
     </div>
   </nav>
 
-    <div class="head-image">
-      <div class="image-overlay">
-        <h1 class="title">Meet the Team</h1>
+  <div class="simple-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('assets/img/team_banner2.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner2.jpg');">
+          <div class="slide-content">
+            <h2 class="text-uppercase fw-bold text-white">Team Members</h2>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('assets/img/team_banner3.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner3.jpg');">
+          <div class="slide-content">
+            <h2 class="text-uppercase fw-bold text-white">Team Members</h2>
+          </div>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
 
     <h1 class="heading" style="padding-top: 3vh;">Board of Directors</h1>
     <div class="image-container">
@@ -709,5 +683,9 @@
       </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/Lightbox-Gallery-No-Gutters-baguetteBox.min.js"></script>
+    <script src="assets/bootstrap/js/Lightbox-Gallery-No-Gutters-Lightbox-Gallery.js"></script>
+    <script src="assets/bootstrap/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/bootstrap/js/Simple-Slider.js"></script>
   </body>
 </html>

@@ -31,82 +31,7 @@
       type="image/x-icon"
     />
     <style>
-      .faq-image-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: calc(50vh - 50px);
-        background: floralwhite;
-        color: #f4f6f7;
-        position: relative;
-        z-index: 1;
-        padding-bottom: 0;
-      }
 
-      .image {
-        width: 100%;
-        height: 60vh;
-        background-position: center;
-        background-size: cover;
-        background-image: url('assets/img/faqs.png');
-      }
-
-      .image-overlay {
-        width: 100%;
-        height: 60vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .title {
-        padding: 0;
-        margin: 0;
-        color: red;
-        font-size: 9vh;
-        font-weight: 500;
-      }
-
-      @media (max-width: 768px) {
-        .faq-image-section {
-          flex-direction: column;
-          text-align: center;
-          padding: 0;
-        }
-
-        .faq-image-section img {
-          width: 90%;
-          height: 100%;
-          margin-left: 0;
-          margin-bottom: 0;
-        }
-      }
-
-      .navbar-logo {
-        width: 168px;
-        height: 96px;
-        border-radius: 0;
-      }
-
-      .faq-text h2 {
-        font-size: 15em;
-        text-align: center;
-      }
-
-      @media (max-width: 768px) {
-        .faq-text h2 {
-          font-size: 6em;
-        }
-
-        .faq-text {
-          text-align: center;
-        }
-
-        .faq-image-section {
-          padding-bottom: 0;
-        }
-      }
       .navbar-nav .nav-item .nav-link {
         position: relative;
         color: white;
@@ -159,6 +84,31 @@
           margin: 10px auto;
         }
       }
+      .banner {
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 768px) {
+        .banner {
+          height: 300px;
+          background-position: top;
+        }
+
+        .col-md-6 {
+          justify-content: initial;
+        }
+
+        .col-md-6 > div {
+          max-width: 100%;
+        }
+
+        .text-light {
+          font-size: 2rem;
+        }
+      }
     </style>
   </head>
 
@@ -179,11 +129,19 @@
       </div>
     </nav>
 
-    <div class="image">
-      <div class="image-overlay">
-        <h1 class="title">FAQs</h1>
+    <section>
+      <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/faqs.png');">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="text-center text-md-start d-flex justify-content-center align-items-center">
+              <div>
+                <h1 class="text-uppercase fw-bold text-light">Frequently Asked Questions (FAQs)</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <section class="py-3" style="font-size: 1.2em;">
       <div class="container">
