@@ -9,7 +9,6 @@
     <meta name="description" content="Team behind Virtual Medical Missions." />
     <title>Team - Virtual Medical Missions</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
@@ -103,7 +102,7 @@
 
       .info-container {
         width: 90%;
-        max-width: 1500px;
+        max-width: 600px;
         margin: 0 auto;
         margin-top: 20px;
         background: white;
@@ -111,28 +110,14 @@
         box-shadow: 0 0 10px black;
         padding: 20px;
         box-sizing: border-box;
-        display: flex;
-      }
-
-      .profile-container {
-        width: 300px;
-        margin-right: 20px;
+        animation: scrollAnimation 0.7s ease-in-out;
       }
 
       .profile {
         width: 100%;
         height: auto;
         border-radius: 15px;
-      }
-
-      .info {
-        flex: 1;
-        font-size: 2vw;
-      }
-
-      .info-content {
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 20px;
       }
 
       .name {
@@ -149,31 +134,6 @@
         margin-top: 10px;
         font-size: 14px;
       }
-
-      @media (min-width: 768px) {
-        .name,
-        .status {
-          text-align: center;
-          font-size: 24px;
-        }
-
-        .about {
-          text-align: center;
-          font-size: 17px;
-        }
-      }
-      @media (max-width: 767px) {
-        .info-container {
-          flex-direction: column;
-          width: 90%;
-        }
-        .profile-container {
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 20px;
-        }
-      }
-
 
       .navbar-nav .nav-item .nav-link {
         position: relative;
@@ -241,18 +201,6 @@
           top: 40%;
         }
       }
-      .name,
-      .status,
-      .about,
-      .navbar-nav .nav-item .nav-link {
-        font-family: 'Nunito', sans-serif;
-      }
-      body {
-        font-family: 'Nunito', sans-serif;
-      }
-      p {
-        font-family: 'Nunito', sans-serif;
-      }
     </style>
   </head>
 
@@ -261,13 +209,13 @@
     <div class="container-fluid"><a class="navbar-brand d-md-none text-center" href="#"><img src="assets/img/logo_tr.png" width="65%" height="65%" alt="Logo"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse d-md-flex" id="navcol-1">
         <ul class="navbar-nav d-flex justify-content-evenly mx-auto w-100">
-          <li class="nav-item"><a class="nav-link text-center fs-3" href="index.html" ><strong>Home</strong></a></li>
-          <li class="nav-item"><a class="nav-link text-center fs-3" href="about.html"><strong>About</strong></a></li>
-          <li class="nav-item"><a class="nav-link text-center fs-3" href="team.html"><strong>Team</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="team.html">Team</a></li>
         </ul><a class="navbar-brand d-none d-md-block me-0 fs-3 text-center"><img src="assets/img/logo_tr.png" width="70%" height="50%" alt="Logo"></a>
         <ul class="navbar-nav d-flex justify-content-evenly mx-auto w-100">
-          <li class="nav-item"><a class="nav-link text-center fs-3" href="faqs.html"><strong>FAQs</strong></a></li>
-          <li class="nav-item"><a class="nav-link text-center fs-3" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC" target="_blank"><strong>Donate</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link text-center fs-3" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC" target="_blank">Donate</a></li>
         </ul>
       </div>
     </div>
@@ -278,12 +226,12 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background: url('assets/img/team_banner2.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner2.jpg');">
           <div class="slide-content">
-            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 3px 3px 3px black, 0 0 0.2em #05445e, 0 0 0.2em #05445e">Team Members</h2>
+            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 1px 1px 2px red, 0 0 1em #05445e, 0 0 0.2em #05445e">Team Members</h2>
           </div>
         </div>
         <div class="swiper-slide" style="background: url('assets/img/team_banner3.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner3.JPG');">
           <div class="slide-content">
-            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 3px 3px 3px black, 0.2em 0.2em 0.2em #05445e, 0 0 0.2em #05445e">Team Members</h2>
+            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 1px 1px 2px red, 0 0 1em #05445e, 0 0 0.2em #05445e">Team Members</h2>
           </div>
         </div>
       </div>
@@ -300,13 +248,9 @@
       <div class="image" onclick="fetch_info(2)"><img class="team-img" src="assets/img/team/board/dr_lee_ewin.png" alt="lee ewin"></div>
       <div class="image" onclick="fetch_info(3)"><img class="team-img" src="assets/img/team/board/dr_dave_u.jpg" alt="dave u"></div>
     </div>
-
-  <div class="info-container">
-    <div class="profile-container">
+    <div class="info-container">
       <img class="profile" id="profile" src="assets/img/team/board/dr_tiff_per.jpg" alt="tiffany">
-    </div>
-    <div class="info">
-      <div class="info-content">
+      <div class="info">
         <h1 class="name" id="name">Ms. Tiffany Peraino (PA-C)</h1>
         <h3 class="status" id="status">Chief Executive Officer</h3>
         <p class="about" id="about">
@@ -314,7 +258,6 @@
         </p>
       </div>
     </div>
-  </div>
 
     <script>
       let boardMembers = [
@@ -368,11 +311,8 @@
       <div class="image" onclick="fetch_mentor_info(0)"><img class="team-img" src="assets/img/team/board/Mr_Usher.png" alt="usher"></div>
       <div class="image" onclick="fetch_mentor_info(1)"><img class="team-img" src="assets/img/team/board/dr_auld.png" alt="dr auld"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="mentor-profile" src="assets/img/team/board/Mr_Usher.png" alt="usher">
-      </div>
+      <img class="profile" id="mentor-profile" src="assets/img/team/board/Mr_Usher.png" alt="usher">
       <div class="info">
         <h1 class="name" id="mentor-name">Scott Usher</h1>
         <h3 class="status" id="mentor-status">Teacher</h3>
@@ -422,11 +362,8 @@
       <div class="image" onclick="fetch_team_director_info(0)"><img class="team-img" src="assets/img/team/students/nihal.jpg" alt="nihal"></div>
       <div class="image" onclick="fetch_team_director_info(1)"><img class="team-img" src="assets/img/team/students/nataniel.png" alt="nataniel"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="team-director-profile" src="assets/img/team/students/nihal.jpg" alt="nihal">
-      </div>
+      <img class="profile" id="team-director-profile" src="assets/img/team/students/nihal.jpg" alt="nihal">
       <div class="info">
         <h1 class="name" id="team-director-name">Nihal Sekhon</h1>
         <h3 class="status" id="team-director-status">Director of Engineering</h3>
@@ -478,11 +415,8 @@
       <div class="image" onclick="fetch_lead_interns_info(2)"><img class="team-img" src="assets/img/team/students/prabhas.png" alt="prabhas"></div>
       <div class="image" onclick="fetch_lead_interns_info(3)"><img class="team-img" src="assets/img/team/students/eileen.jpg" alt="eileen"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="lead-interns-profile" src="assets/img/team/students/nil.jpg" alt="nil">
-      </div>
+      <img class="profile" id="lead-interns-profile" src="assets/img/team/students/nil.jpg" alt="nil">
       <div class="info">
         <h1 class="name" id="lead-interns-name">Nil Patel</h1>
         <h3 class="status" id="lead-interns-status">Lead Engineering Intern - Class of 2024</h3>
@@ -546,11 +480,8 @@
       <div class="image" onclick="fetch_student_medical_team_info(2)"><img class="team-img" src="assets/img/team/students/maddy.jpg" alt="maddy"></div>
       <div class="image" onclick="fetch_student_medical_team_info(3)"><img class="team-img" src="assets/img/team/students/krisshika.jpg" alt="krisshika"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="student-medical-team-profile" src="assets/img/team/students/jeethu.jpg" alt="jeethu">
-      </div>
+      <img class="profile" id="student-medical-team-profile" src="assets/img/team/students/jeethu.jpg" alt="jeethu">
       <div class="info">
         <h1 class="name" id="student-medical-team-name">Jeethashri Sundarraj</h1>
         <h3 class="status" id="student-medical-team-status">Medical Intern - Class of 2024</h3>
@@ -611,11 +542,8 @@
     <div class="image-container">
       <div class="image" onclick="fetch_student_engineering_team_info(0)"><img src="assets/img/team/students/Christian.jpg" class="team-img" alt="christian"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="student-engineering-team-profile" src="assets/img/team/students/Christian.jpg" alt="christian">
-      </div>
+      <img class="profile" id="student-engineering-team-profile" src="assets/img/team/students/Christian.jpg" alt="christian">
       <div class="info">
         <h1 class="name" id="student-engineering-team-name">Christian Chavez</h1>
         <h3 class="status" id="student-engineering-team-status">Engineering Intern - Class of 2024</h3>
@@ -660,11 +588,8 @@
       <div class="image" onclick="fetch_student_CS_team_info(0)"><img class="team-img" src="assets/img/team/students/chloe.png" alt="chloe"></div>
       <div class="image" onclick="fetch_student_CS_team_info(1)"><img class="team-img" src="assets/img/team/students/alexis.jpg" alt="alexis"></div>
     </div>
-
     <div class="info-container">
-      <div class="profile-container">
-        <img class="profile" id="student-cs-team-profile" src="assets/img/team/students/chloe.png" alt="chloe">
-      </div>
+      <img class="profile" id="student-cs-team-profile" src="assets/img/team/students/chloe.png" alt="chloe">
       <div class="info">
         <h1 class="name" id="student-cs-team-name">Chloe Wu</h1>
         <h3 class="status" id="student-cs-team-status">Computer Science Intern - Class of 2024</h3>
