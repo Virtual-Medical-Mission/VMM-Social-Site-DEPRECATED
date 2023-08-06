@@ -213,7 +213,19 @@
         background-color: red;
       }
 
+      .banner {
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
       @media (max-width: 767px) {
+        .banner {
+          height: 300px;
+          background-position: top;
+        }
+
         .navbar-nav {
           text-align: center;
         }
@@ -273,25 +285,20 @@
     </div>
   </nav>
 
-  <div class="simple-slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('assets/img/team_banner2.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner2.jpg');">
-          <div class="slide-content">
-            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 3px 3px 3px black, 0 0 0.2em #05445e, 0 0 0.2em #05445e">Team Members</h2>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background: url('assets/img/team_banner3.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner3.JPG');">
-          <div class="slide-content">
-            <h2 class="text-uppercase fw-bold text-white" style="text-shadow: 3px 3px 3px black, 0.2em 0.2em 0.2em #05445e, 0 0 0.2em #05445e">Team Members</h2>
+    <section>
+      <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner2.jpg');">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="text-center text-md-start d-flex justify-content-center align-items-center">
+              <div>
+                <h1 class="text-uppercase fw-bold text-light" style="text-shadow: 3px 3px 3px black, 0 0 0.2em #05445e, 0 0 0.2em #05445e">Team Members</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
+    </section>
+       
 
     <h1 class="heading" style="padding-top: 3vh;">Board of Directors</h1>
     <div class="image-container">
