@@ -517,7 +517,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon email-icon">
+          <div class="contact-icon linkedin-icon" id="linkedin-icon" style="display: none;">
             <a id="linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -533,7 +533,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon email-icon" id="email-icon" style="display: none;">
             <a id="email" href="mailto:example@example.com">
               <div class="icon-wrapper email-icon">
                 <svg
@@ -561,8 +561,6 @@
           status: "Chief Executive Officer",
           about:
             "Tiffany Peraino, the founder of Virtual Medical Missions, has had a heart for medical missions since she was a young child. In college, she started doing medical missions in the Dominican Republic every summer. During the pandemic, her practice adjusted to meet patients' needs by opening a telemedicine clinic. She realized that telemedicine has the potential to bring medical care to anyone, anywhere. Her passion for medical missions awakened a desire to use telemedicine as a resource to bring medical care to areas that have minimal access to healthcare. Driven by the love of Jesus, she hopes to change lives internationally by equipping people with the tools they need to live a healthy life.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/board/dr_aime_fren.png",
@@ -570,8 +568,6 @@
           status: "Chief Medical Officer",
           about:
             "After finishing her time in academic medicine Dr. Aimee French decided to open her own practice in Corona and Riverside and give back to the community. Dr. French is a Volunteer Clinical Faculty member for Pulmonary/Critical Care Fellowship at UC, Irvine, is the past Chairman of the Leadership Board for the American Lung Association – San Bernardino and Riverside Counties and has spent countless hours speaking at patient events in both Riverside and Corona areas. In 2016 and 2017, Dr. French was awarded the Best 40 Under 40 by the Corona Chamber of Commerce, she was also recently selected as one of the Top Doctors in the Corona area by West Coast Magazine.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/board/dr_lee_ewin.png",
@@ -579,8 +575,6 @@
           status: "Chief Technical Officer",
           about:
             "Lee Ewin, MD is a Board Certified Family Medicine physician who founded the Kaiser Permanente Moreno Valley clinic in 1987 and developed several electronic health record (EHR) systems and continued as the lead ambulatory EHR physician for the next 17 years. He helped in the EHR, including the establishment of electronic medical coding support, electronic regulatory compliance tools for physicians, and in 2004 co-founded and was the CEO of Geondan Health Solutions. Dr. Ewin retired from the SCPMG partnership in 2020, but still works part time seeing patients and leading both artificial intelligence and genetic testing projects for Kaiser Permanente.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/board/dr_dave_u.jpg",
@@ -588,8 +582,6 @@
           status: "Treasurer",
           about:
             "Dave Underwood has been the CEO of Island Encounter Missions since 2001. He has been engaged in humanitarian aide domestic and abroad for decades and has experience partnering with like-minded organizations. He sits as director / advisor to 15 various non-profit organizations. He has a Doctorate of Letters in Finance and a Master's of Business Administration from Pepperdine University. He owns and operates his own accounting firm in San Diego since 1985.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
       ];
 
@@ -611,6 +603,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedMember.linkedin) {
+        document.getElementById("linkedin-icon").style.display = "block";
+        document.getElementById("linkedin").setAttribute("href", selectedMember.linkedin);
+        } else {
+        document.getElementById("linkedin-icon").style.display = "none";
+        }
+
+        if (selectedMember.email) {
+        document.getElementById("email-icon").style.display = "block";
+        document.getElementById("email").setAttribute("href", selectedMember.email);
+        } else {
+        document.getElementById("email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -657,7 +663,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon linkedin-icon" id="mentor-linkedin-icon" style="display: none;">
             <a id="mentor-linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -673,7 +679,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon email-icon">
+          <div class="contact-icon email-icon" id="mentor-email-icon" style="display: none;">
             <a id="mentor-email" href="mailto:example@example.com">
               <div class="icon-wrapper email-icon">
                 <svg
@@ -701,8 +707,6 @@
           status: "Teacher",
           about:
             "Mr. Usher began teaching Career and Technical Education courses in 2005. He has experience teaching business, web design, graphic design, computer-aided drafting, and was hired to start the computer science pathway at the Eastvale STEM Academy in 2016. Mr. Usher enjoys supporting all students by advising on-campus clubs and coaching high school sports.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/board/dr_auld.png",
@@ -710,8 +714,6 @@
           status: "Teacher",
           about:
             "Following completion of her medical degree, Dr. Auld took an atypical path by transitioning into the field of education. She has been with the Eastvale STEM Academy since its inception, going back to 2016. Dr. Auld has developed curriculum for CNUSD, unique to the Biomedical Pathway where she currently teaches Career Technical Education-specific courses in Medical Biology, Pathology, and Infectious Disease.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
       ];
 
@@ -737,6 +739,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedMentor.linkedin) {
+          document.getElementById("mentor-linkedin-icon").style.display = "block";
+          document.getElementById("mentor-linkedin").setAttribute("href", selectedMentor.linkedin);
+        } else {
+          document.getElementById("mentor-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedMentor.email) {
+          document.getElementById("mentor-email-icon").style.display = "block";
+          document.getElementById("mentor-email").setAttribute("href", selectedMentor.email);
+        } else {
+          document.getElementById("mentor-email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -786,7 +802,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon linkedin-icon" id="team-director-linkedin-icon">
             <a id="team-director-linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -802,7 +818,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon email-icon">
+          <div class="contact-icon email-icon" id="team-director-email-icon">
             <a id="team-director-email" href="mailto:example@example.com">
               <div class="icon-wrapper email-icon">
                 <svg
@@ -839,8 +855,6 @@
           status: "Director of Computer Science (CS)",
           about:
             "Nataniel Jayaseelan is an upcoming student at UC Santa Cruz dedicated and driven computer science intern at Virtual Medical Missions. With a passion for using technology for social impact, Nataniel takes pride in being a part of a team that aims to provide medical services to underserved communities. As the lead intern, Nataniel is responsible for developing innovative software solutions that optimize healthcare processes. With a strong background in computer science and a commitment to making a difference, Nataniel is actively contributing to the organization's mission of ensuring accessible and quality healthcare for all.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
       ];
 
@@ -870,6 +884,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedTeamDirector.linkedin) {
+        document.getElementById("team-director-linkedin-icon").style.display = "block";
+        document.getElementById("team-director-linkedin").setAttribute("href", selectedTeamDirector.linkedin);
+        } else {
+        document.getElementById("team-director-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedTeamDirector.email) {
+        document.getElementById("team-director-email-icon").style.display = "block";
+        document.getElementById("team-director-email").setAttribute("href", selectedTeamDirector.email);
+        } else {
+        document.getElementById("team-director-email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -937,7 +965,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon linkedin-icon" id="lead-interns-linkedin-icon">
             <a id="lead-interns-linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -953,7 +981,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon email-icon">
+          <div class="contact-icon email-icon" id="lead-interns-email-icon">
             <a id="lead-interns-email" href="mailto:example@example.com">
               <div class="icon-wrapper email-icon">
                 <svg
@@ -999,8 +1027,6 @@
           status: "Lead Medical Intern - Class of 2024",
           about:
             "Eleanor Roosevelt High School student Prabhas Kolluri will soon graduate as a member of the Class of 2024. He has had a lifelong passion for medicine and he is thrilled about the chance to be a part of VMM’s medical team. As the team's lead intern, Prabhas has been assisting the group in conducting research, creating lists of the illnesses that our branching logics will eventually identify, digitalizing the branch logic’s to the internet, helping the mentors, and developing queries that will be incorporated into the routes. Prabhas is actively aiming to make a substantial influence on the communities that use telemedicine in the future, inspired by the project's potential and scope. He looks forward to a bright future in this project!",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/students/eileen.jpg",
@@ -1039,6 +1065,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedLeadIntern.linkedin) {
+          document.getElementById("lead-interns-linkedin-icon").style.display = "block";
+          document.getElementById("lead-interns-linkedin").setAttribute("href", selectedLeadIntern.linkedin);
+        } else {
+          document.getElementById("lead-interns-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedLeadIntern.email) {
+          document.getElementById("lead-interns-email-icon").style.display = "block";
+          document.getElementById("lead-interns-email").setAttribute("href", selectedLeadIntern.email);
+        } else {
+          document.getElementById("lead-interns-email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -1107,7 +1147,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon linkedin-icon" id="student-medical-linkedin-icon" style="display: none;">
             <a id="student-medical-team-linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -1123,7 +1163,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon email-icon">
+          <div class="contact-icon email-icon" id="student-medical-email-icon" style="display: none;">
             <a
               id="student-medical-team-email"
               href="mailto:example@example.com"
@@ -1154,8 +1194,6 @@
           status: "Medical Intern - Class of 2024",
           about:
             "Jeethu Sundarraj is an upcoming senior at Eleanor Roosevelt High School and is apart of the Class of 2024. With a long-standing passion for medicine, she is ecstatic about the opportunity to be involved in VMM as a part of the medical team. As a team leader, Jeethu has been helping the team research & compile lists of the diseases that our branching logics will ultimately diagnose as well as come up with questions to be embedded in the pathways. Hopeful about the possibilities & reach of this project, Jeethu is actively working to help leave a significant impact on the communities that use telemedicine in the future.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/students/aditi.png",
@@ -1163,8 +1201,6 @@
           status: "Medical Intern - Class of 2024",
           about:
             "Adithi Ganesan is a part of the class of 2024 at Eleanor Roosevelt High School. VMM has helped further educate her with her medical knowledge and putting what she has learnt into use to help serve many communities. As a member of this project, she has helped with the branching logic, interpreting data presented by other teams, and working with other teams to assist them in their findings. Adithi is extremely grateful to be a part of a team who wants to make change, and leave a positive growing impact on other communities and for future generations.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/students/maddy.jpg",
@@ -1172,8 +1208,6 @@
           status: "Medical Intern - Class of 2024",
           about:
             "Madison Saldana is a part of the class of 2024 at Eleanor Roosevelt High School and is excited and passionate about the work being done at VMM using her medical knowledge to provide medical services to underdeveloped countries. As a team member, Madison is responsible for helping create branching logics to help diagnose and treat individuals based on our survey. With her knowledge Madison is ecstatic to be a part of a team that cares about leaving an impact that will leave a lasting impact on so many people’s lives.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/students/krisshika.jpg",
@@ -1181,8 +1215,6 @@
           status: "Medical Intern - Class of 2024",
           about:
             "Krrishika is a rising senior at Eleanor Roosevelt High School in the Class of 2024. She has a long-standing interest in medicine and is excited about the opportunity to be a part of the VMM medical team. Krrishika, as a team leader, has been assisting the team in researching and compiling lists of diseases that our branching logics would eventually diagnose, as well as coming up with questions to be incorporated in the paths. Krrishika is optimistic about the project's potential and scope, and she is actively striving to make a significant impact on the communities that will use telemedicine in the future.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
       ];
 
@@ -1212,6 +1244,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedMedicalStudent.linkedin) {
+          document.getElementById("student-medical-linkedin-icon").style.display = "block";
+          document.getElementById("student-medical-linkedin").setAttribute("href", selectedMedicalStudent.linkedin);
+        } else {
+          document.getElementById("student-medical-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedMedicalStudent.email) {
+          document.getElementById("student-medical-email-icon").style.display = "block";
+          document.getElementById("student-medical-email").setAttribute("href", selectedMedicalStudent.email);
+        } else {
+          document.getElementById("student-medical-email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -1255,7 +1301,7 @@
           </p>
         </div>
         <div class="contact-icons">
-          <div class="contact-icon linkedin-icon">
+          <div class="contact-icon linkedin-icon" id="student-engineering-linkedin-icon" style="display: none;">
             <a id="student-engineering-team-linkedin" href="#" target="_blank">
               <div class="icon-wrapper linkedin-icon">
                 <svg
@@ -1271,7 +1317,7 @@
               </div>
             </a>
           </div>
-          <div class="contact-icon email-icon">
+          <div class="contact-icon email-icon" id="student-engineering-email-icon" style="display: none;">
             <a
               id="student-engineering-team-email"
               href="mailto:example@example.com"
@@ -1302,8 +1348,6 @@
           status: "Engineering Intern - Class of 2024",
           about:
             "Christian Chavez is a part of the class of 2024 at Eleanor Roosevelt High School and truly finds the opportunity to work at VMM a great way to help others through providing medical services to underdeveloped countries. As a team leader Christian is in charged of overseeing the work being done on the medical side and helping come up with ideas on the engineering side.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
       ];
 
@@ -1333,6 +1377,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedEngineeringStudent.linkedin) {
+          document.getElementById("student-engineering-linkedin-icon").style.display = "block";
+          document.getElementById("student-engineering-linkedin").setAttribute("href", selectedEngineeringStudent.linkedin);
+        } else {
+          document.getElementById("student-engineering-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedEngineeringStudent.email) {
+          document.getElementById("student-engineering-email-icon").style.display = "block";
+          document.getElementById("student-engineering-email").setAttribute("href", selectedEngineeringStudent.email);
+        } else {
+          document.getElementById("student-engineering-email-icon").style.display = "none";
+        }
       }
     </script>
 
@@ -1391,7 +1449,7 @@
             </p>
           </div>
           <div class="contact-icons">
-            <div class="contact-icon linkedin-icon">
+            <div class="contact-icon linkedin-icon" id="student-cs-team-linkedin-icon" style="display: none;">
               <a id="student-cs-team-linkedin" href="#" target="_blank">
                 <div class="icon-wrapper linkedin-icon">
                   <svg
@@ -1407,7 +1465,7 @@
                 </div>
               </a>
             </div>
-            <div class="contact-icon email-icon">
+            <div class="contact-icon email-icon" id="student-cs-team-email-icon" style="display: none;">
               <a id="student-cs-team-email" href="mailto:example@example.com">
                 <div class="icon-wrapper email-icon">
                   <svg
@@ -1436,8 +1494,6 @@
           status: "Computer Science Intern - Class of 2024",
           about:
             "Chloe Wu is a rising senior at Eleanor Roosevelt High School. With her expertise in multiple programming languages and background working with underprivileged communities, she has taken the lead in implementing machine learning algorithms to further revolutionize VMM supporting its mission of service. Her lifelong passion for learning coupled with a desire to use technological advancements for social good has allowed her help advance VMM’s mission through computer science.",
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:",
         },
         {
           profile: "assets/img/team/students/alexis.jpg",
@@ -1455,7 +1511,6 @@
           status: "Computer Science Intern - Class of 2026",
           about:
             "Praneet Dumpa is a sophomore at Eleanor Roosevelt High School and Community Service Director at ERHS FBLA. He is a valuable member of our development teams, contributing to both front-end and back-end projects. This very website has his signature all over it: from the text shadows around the titles to the header images on every page. Praneet's unwavering dedication to achieving perfection combined with his expertise in various programming languages and web design techniques make him a driving force of our mission at VMM.",
-          linkedin: "https://www.linkedin.com/",
           email: "mailto:praneetdumpa@gmail.com",
         },
       ];
@@ -1486,6 +1541,20 @@
         }
 
         images[index].classList.add("clicked");
+
+        if (selectedCSStudent.linkedin) {
+          document.getElementById("student-cs-team-linkedin-icon").style.display = "block";
+          document.getElementById("student-cs-team-linkedin").setAttribute("href", selectedCSStudent.linkedin);
+        } else {
+          document.getElementById("student-cs-team-linkedin-icon").style.display = "none";
+        }
+
+        if (selectedCSStudent.email) {
+          document.getElementById("student-cs-team-email-icon").style.display = "block";
+          document.getElementById("student-cs-team-email").setAttribute("href", selectedCSStudent.email);
+        } else {
+          document.getElementById("student-cs-team-email-icon").style.display = "none";
+        }
       }
     </script>
 
