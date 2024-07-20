@@ -10,12 +10,12 @@ module.exports = withMT({
     },
     extend: {
       colors: {
-        "font-light": "#040316",
+        "font-light": "#000000",
         "back-light": "#ffffff",
-        "primary-light": "#2A3D65",
+        "primary-light": "#B1353B",
         "secondary-light": "#9F9DD0",
         "accent-light": "#d08362",
-        "font-dark": "#ffffff",
+        "font-dark": "#ffffff", 
         "back-dark": "#0e0d1c",
         "primary-dark": "#2a3d65",
         "secondary-dark": "#9d502f",

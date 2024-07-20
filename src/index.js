@@ -14,7 +14,7 @@ import {
 
 import Home from "./pages/home";
 import About from "./pages/about";
-import Clubs from "./pages/clubs";
+import FAQs from "./pages/FAQs";
 import NoPage from "./pages/nopage";
 import Telemed from "./pages/vmm";
 import MustangsApp from "./pages/mustangsApp";
@@ -26,9 +26,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/clubs" element={<Clubs />} />
+        <Route path="/FAQs" element={<FAQs />} />
         <Route path="/vmm" element={<Telemed />} />
         <Route path="/mustangsApp" element={<MustangsApp />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </>
   );

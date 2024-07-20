@@ -12,14 +12,14 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import {
-  CubeTransparentIcon,
+  QuestionMarkCircleIcon,
   UserCircleIcon,
   Square3Stack3DIcon,
   ChevronDownIcon,
   Bars2Icon,
 } from "@heroicons/react/24/solid";
 
-import logo1 from "../assets/logo_woBg.png";
+import logo1 from "../assets/logo_tr.png";
 import DarkModeButton from "./darkModeSwitch";
 import logoW from "../assets/logo_woBg_white.png";
 import { Link } from "react-router-dom";
@@ -29,13 +29,13 @@ const navListMenuItems = [
     title: "Virtual Medical Missions",
     description:
       "Learn how students at Eastvale Innovators are making a difference in the world by creating Telemedicine technology for third world regions.",
-    link: "/vmm",
+    link: "/#/vmm",
   },
   {
     title: "ERHS Mustangs App",
     description:
       "Check out the progress of the ERHS Mustangs App, a project by Eastvale Innovators to help students stay connected with their school admin and peers.",
-    link: "/mustangsApp",
+    link: "/#/mustangsApp",
   },
 ];
 
@@ -113,19 +113,19 @@ const navListItems = [
   {
     label: "About",
     icon: UserCircleIcon,
-    link: "/about",
+    link: "/#/about",
   },
   {
-    label: "Clubs",
-    icon: CubeTransparentIcon,
-    link: "/clubs",
+    label: "FAQs",
+    icon: QuestionMarkCircleIcon,
+    link: "/#/FAQs",
   },
 ];
 
 function NavList() {
   return (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <NavListMenu />
+      {/* <NavListMenu /> */}
       {navListItems.map(({ label, icon, link }, key) => (
         <Typography
           key={label}
@@ -163,17 +163,17 @@ export function ComplexNavbar() {
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 ">
         <a href="/#/">
           <img
-            src={logo1}
+            src={logoW}
             alt="logo"
-            width="50"
-            height="50"
+            width="125"
+            height="125"
             className="drop-shadow dark:hidden"
           ></img>
           <img
-            src={logoW}
+            src={logo1}
             alt="logo"
-            width="50"
-            height="50"
+            width="125"
+            height="125"
             className="drop-shadow hidden dark:block"
           />
         </a>
@@ -192,7 +192,7 @@ export function ComplexNavbar() {
         </div>
 
         <Button size="sm" variant="text">
-          <span className="dark:text-font-dark">Contact Us</span>
+          <span className="dark:text-font-dark">Donate Now</span>
         </Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
