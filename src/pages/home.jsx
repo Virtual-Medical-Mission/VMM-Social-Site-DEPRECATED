@@ -35,7 +35,21 @@ export default function Home() {
             />
           </div>
         </header>
+        <div className="flex items-center justify-center py-10">
+          <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_rZ11PibGHg?si=r-fhQ_uOUApl8-R0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              className="rounded-lg "
+          ></iframe>
+        </div>
 
+   
+        
         <ActionItems />
       </div>
       <Footer />
