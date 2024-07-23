@@ -24,9 +24,11 @@ import { Footer } from "../components/footer";
 export default function Home() {
   return (
     <div className="App font-family:league-spartan bg-back-light dark:bg-back-dark">
+      <div className="pt-5 w-full">
+        <ComplexNavbar />
+      </div>
       <div>
         <header className="App-header pt-5 justify-center">
-          <ComplexNavbar />
           <div className="flex items-center justify-center w-full pt-10">
             <Banner
               title="Welcome to Virtual Medical Missions"

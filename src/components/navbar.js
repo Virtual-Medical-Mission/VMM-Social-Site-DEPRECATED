@@ -192,7 +192,12 @@ export function ComplexNavbar() {
         </div>
 
         <Button size="sm" variant="text">
-          <span className="dark:text-font-dark">Donate Now</span>
+          <a href="http://vmmhealthcare.org/donate" target="_blank">
+            <span className="dark:text-font-dark">
+              Donate Now
+            </span>
+          </a>
+          
         </Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">

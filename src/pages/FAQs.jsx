@@ -83,7 +83,7 @@ export function AccordionCustomIcon() {
     },
     {
       question: "How to donate or become a donor?",
-      answer: "You can use the donate buttons in the menu bar and footer. All donations made in the United States are tax-deductible."
+      answer: "You can use the donate buttons in the menu bar and footer. All donations made in the United States are tax-deductible. You can also donate through the link: http://vmmhealthcare.org/donate"
     }
   ]
   return (
