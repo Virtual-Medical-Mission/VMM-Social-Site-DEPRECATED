@@ -2,6 +2,7 @@ import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
 import backdrop from "../assets/img/backdrop_1.jpg";
 import { Footer } from "../components/footer";
+import { Subscribe } from "../components/subscribe";
 // import {
 //   Card,
 //   CardHeader, 
@@ -27,6 +28,9 @@ export default function About() {
         </header>
       </div>
       <BiCardSection />
+      <div className="flex justify-center">
+          <Subscribe />
+      </div>
       <Footer />
     </div>
   );

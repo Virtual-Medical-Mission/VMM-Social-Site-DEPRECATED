@@ -14,11 +14,12 @@ import {
   MenuItem,
 } from "@material-tailwind/react";
 
-import branching from "../assets/img/medical story.png";
-import clubs from "../assets/img/home-page-banner.png";
+import research from "../assets/img/medical story.png";
+// import clubs from "../assets/img/home-page-banner.png";
 import aboutus from "../assets/img/aboutUs.jpg";
-// import Associates from "../components/associates";
+import outreach from "../assets/img/vmm_images/image5_1.png";
 import { Footer } from "../components/footer";
+import { Subscribe } from "../components/subscribe";
 
 
 export default function Home() {
@@ -46,13 +47,13 @@ export default function Home() {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-              className="rounded-lg "
+              className="rounded-lg sm:w-1/2 lg:h-96"
           ></iframe>
         </div>
-
-   
-        
         <ActionItems />
+        <div className="flex justify-center">
+          <Subscribe />
+        </div>
       </div>
       <Footer />
     </div>
@@ -61,35 +62,26 @@ export default function Home() {
 
 function ActionItems() {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark xxs:items-center">
         Learn More
       </h1>
-      <div className="flex justify-center ">
-        <div className="flex lg:flex-row justify-between xxs:w-10 xxs:items-center sm:space-y-10 sm:items-center w-3/4 sm:flex-col xxs:flex-col">
-          <div className="xxs:py-5">
+      <div className="flex justify-center w-full">
+        <div className="flex md:flex-row sm:flex-col">
+          <div className="px-24 xxs:py-5 md:py-5 sm:py-5">
             <CardDefault
-              header="About Us"
-              desc="Check out how students at the Eastvale STEM Academy & Eleanor Roosevelt High School are gaining real world experiences and gearing up for the future!"
+              header="Research"
+              desc="Virtual Medical Missions all started with a dream that began in 2015, and has grown to become a reality today."
               dir="/about"
-              timg={aboutus}
+              timg={research}
             />
           </div>
-
-          <div className="lg:px-5 xxs:py-5">
+          <div className="px-24">
             <CardDefault
-              header="Clubs"
-              desc="Eastvale Innovators are involved in various clubs that work to benefit the students of ERHS and eSTEM as well as the greater eastvale community. Find out more about their various activities."
+              header="Outreach"
+              desc="Starting with Godo, Kenya, we hope to expand our services to other villages in Kenya, and then to the world."
               dir="/clubs"
-              timg={clubs}
-            />
-          </div>
-
-          <div>
-            <CardMenu
-              header="Projects"
-              desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. "
-              timg={branching}
+              timg={outreach}
             />
           </div>
         </div>
@@ -102,7 +94,7 @@ function CardDefault(props) {
   return (
     <Card className="mt-6 w-96 dark:bg-primary-dark">
       <CardHeader color="blue-gray" className="h-42">
-        <img src={props.timg} alt="card-image" />
+        <img src={props.timg} alt="card-image" className="h-42"/>
       </CardHeader>
       <CardBody>
         <h1 className="text-2xl font-semibold dark:text-font-dark">
