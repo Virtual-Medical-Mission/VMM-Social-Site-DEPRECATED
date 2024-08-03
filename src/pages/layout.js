@@ -15,7 +15,7 @@ const Layout = () => {
             <Link to="/clubs">Clubs</Link>
           </li>
           <li>
-            <Link to="/vmm">Virtual Medical Missions</Link>
+            <Link to="/contact">Virtual Medical Missions</Link>
           </li>
           <li>
             <Link to="/mustangsApp">ERHS Mustangs App</Link>

@@ -16,8 +16,8 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import FAQs from "./pages/FAQs";
 import NoPage from "./pages/nopage";
-import Telemed from "./pages/vmm";
-import MustangsApp from "./pages/mustangsApp";
+import ContactPage from "./pages/contactPage";
+import HistoryPage from "./pages/history";
 import { ComplexNavbar } from "./components/navbar";
 
 export default function App() {
@@ -27,8 +27,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/FAQs" element={<FAQs />} />
-        <Route path="/vmm" element={<Telemed />} />
-        <Route path="/mustangsApp" element={<MustangsApp />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/history" element={<HistoryPage />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>

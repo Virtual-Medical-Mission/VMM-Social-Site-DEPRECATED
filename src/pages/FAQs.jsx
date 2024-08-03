@@ -18,7 +18,7 @@ export default function FAQs() {
           <div className="flex items-center justify-center w-full pt-10">
             <Banner
               title="Frequently Asked Questions"
-              caption="Here are some common questions and answers about our organization and telemedicine services."
+              caption="🕊 Legacy of Healing"
               Banner={backdrop}
             />
           </div>
