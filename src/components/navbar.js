@@ -16,7 +16,8 @@ import {
   UserCircleIcon,
   Square3Stack3DIcon,
   ChevronDownIcon,
-  Bars2Icon
+  Bars2Icon,
+  HomeIcon
 } from '@heroicons/react/24/solid'
 
 import logo1 from '../assets/logo_tr.png'
@@ -29,13 +30,13 @@ const navListMenuItems = [
     title: 'Our Works',
     description:
       'Starting with Godo, Kenya, we hope to expand our services to other villages in Kenya, and then to the world.',
-    link: '/#/vmm'
+    link: '/works'
   },
   {
     title: 'Our History',
     description:
       'Virtual Medical Missions all started with a dream that began in 2015, and has grown to become a reality today. ',
-    link: '/#/history'
+    link: '/history'
   }
 ]
 
@@ -130,6 +131,17 @@ const navListItems = [
 function NavList () {
   return (
     <ul className='mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center'>
+      <Typography
+        as='a'
+        href='/#/'
+        variant='small'
+        className='font-normal'
+      >
+        <MenuItem className='hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full dark:text-font-dark'>
+          <HomeIcon className='h-[18px] w-[18px] text-blue-gray-500 dark:text-font-dark' />{' '}
+          Home
+        </MenuItem>
+      </Typography>
       <NavListMenu />
       {navListItems.map(({ label, icon, link }, key) => (
         <Typography

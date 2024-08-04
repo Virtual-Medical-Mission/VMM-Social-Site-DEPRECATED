@@ -1,7 +1,7 @@
 import React from "react";
 import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
-import backdrop from "../assets/img/backdrop_1.jpg";
+import backdrop from "../assets/img/vmm_images/image3.png";
 import {
   Accordion,
   AccordionHeader,

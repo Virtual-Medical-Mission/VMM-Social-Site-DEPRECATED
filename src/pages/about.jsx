@@ -3,15 +3,8 @@ import { Banner } from '../components/banner'
 import backdrop from '../assets/img/backdrop_1.jpg'
 import { Footer } from '../components/footer'
 import { Subscribe } from '../components/subscribe'
-import { HorizontalCardLeft } from '../components/horizontalCardLeft'
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
-import { ContactForm } from '../components/contact'
+import ThreeCardSplit from '../components/threeCardSplit'
+import ActionItems from '../components/actionItems'
 
 export default function About () {
   return (
@@ -32,6 +25,12 @@ export default function About () {
       </div>
       <BiCardSection />
       <div className='flex justify-center'>
+        <ThreeCardSplit />
+      </div>
+      <div className='flex justify-center mt-6'>
+        <ActionItems />
+      </div>
+      <div className='flex justify-center'>
         <Subscribe />
       </div>
       <Footer />
@@ -42,7 +41,7 @@ export default function About () {
 export function BiCardSection () {
   return (
     <div className='dark:text-font-dark text-font-light flex justify-center p-10'>
-      <div className='w-1/2'>
+      <div className='w-3/4'>
         <p>
           Here in the U.S., we enjoy easy access to quality healthcare and
           medicines - most of us can take a short drive to a nearby clinic,
@@ -52,9 +51,7 @@ export function BiCardSection () {
           Organization reports that over half the world’s population does not
           have adequate access to quality healthcare.
         </p>
-        
       </div>
-      
     </div>
   )
 }

@@ -1,9 +1,9 @@
 
 import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
-import backdrop from "../assets/img/backdrop_1.jpg";
+import backdrop from "../assets/img/vmm_images/image4.png";
 import { ContactForm } from "../components/contact";
-
+import { Footer } from "../components/footer";
 
 export default function ContactPage() {
     return(
@@ -19,8 +19,11 @@ export default function ContactPage() {
             />
           </div>
         </header>
-        <div className='flex justify-center py-5'>
+        <div className='flex justify-center mt-12'>
           <ContactForm />
+        </div>
+        <div className='flex justify-center'>
+          <Footer />
         </div>
       </div>
     </div>

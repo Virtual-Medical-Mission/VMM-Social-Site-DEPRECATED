@@ -19,6 +19,7 @@ import NoPage from "./pages/nopage";
 import ContactPage from "./pages/contactPage";
 import HistoryPage from "./pages/history";
 import { ComplexNavbar } from "./components/navbar";
+import OurWorks from "./pages/ourWorks";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/FAQs" element={<FAQs />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/works" element={<OurWorks />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>

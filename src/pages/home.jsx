@@ -1,4 +1,4 @@
-import backdrop from "../assets/img/backdrop_1.jpg";
+import backdrop from "../assets/img/vmm_images/image10.png";
 import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
 
@@ -14,13 +14,11 @@ import {
   MenuItem,
 } from "@material-tailwind/react";
 
-import research from "../assets/img/medical story.png";
-// import clubs from "../assets/img/home-page-banner.png";
-import aboutus from "../assets/img/aboutUs.jpg";
-import outreach from "../assets/img/vmm_images/image5_1.png";
+
 import { Footer } from "../components/footer";
 import { Subscribe } from "../components/subscribe";
 import ActionItems from "../components/actionItems";
+
 
 export default function Home() {
   return (
@@ -50,7 +48,9 @@ export default function Home() {
               className="rounded-lg sm:w-1/2 lg:h-96"
           ></iframe>
         </div>
-        <ActionItems />
+        <div className="flex justify-center">
+          <ActionItems />
+        </div>
         <div className="flex justify-center">
           <Subscribe />
         </div>
@@ -60,26 +60,7 @@ export default function Home() {
   );
 }
 
-function CardDefault(props) {
-  return (
-    <Card className="mt-6 w-96 dark:bg-primary-dark">
-      <CardHeader color="blue-gray" className="h-42">
-        <img src={props.timg} alt="card-image" className="h-42"/>
-      </CardHeader>
-      <CardBody>
-        <h1 className="text-2xl font-semibold dark:text-font-dark">
-          {props.header}
-        </h1>
-        <h1 className="dark:text-font-dark">{props.desc}</h1>
-      </CardBody>
-      <CardFooter className="pt-0">
-        <a href={props.dir}>
-          <Button color="red">Read More</Button>
-        </a>
-      </CardFooter>
-    </Card>
-  );
-}
+
 
 function CardMenu(props) {
   return (
